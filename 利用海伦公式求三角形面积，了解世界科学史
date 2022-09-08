@@ -1,0 +1,23 @@
+import java.util.Scanner;
+    public class Main{
+        public static void main (String[] args){
+            Scanner in = new Scanner(System.in);
+            double a,b,c,p,S;
+            while (in.hasNext())
+            {
+            a = in.nextDouble();
+            b = in.nextDouble();
+            c = in.nextDouble();
+            if (a > 0 && b > 0 && c > 0 && a+b>c && a+c>b && b+c>a ) 
+                {
+                p = (a + b + c)/2;
+                S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+                System.out.printf("%.2f\n",S);
+                }
+                else
+                {
+                    System.out.println("Input Error!");
+                }
+            }
+        }
+    }
