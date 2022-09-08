@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+public class Main {
+	        public static void main(String[]args){
+	            Scanner in = new Scanner(System.in);
+	            String A = in.next();
+	            String B = in.next();
+	            BigInteger a = new BigInteger(A);
+	            BigInteger b = new BigInteger(B);
+	            String C = String.valueOf(a.add(b));
+	            System.out.println( C);
+	        }
+	    }
+      //主要考两个超大数相加
+      //String类型与BigInteger类型互转
+      //之前String A = in.next();写String A = in.nextLine();一直报错
