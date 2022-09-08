@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int h, foot, inch;
+        h = in.nextInt();
+        foot = (int)(h/30.48);
+        inch = (int)((h/30.48-foot)*12);
+        System.out.println(foot+" "+inch);
+    }
+}
